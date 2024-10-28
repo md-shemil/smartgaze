@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main weather";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    box-sizing: border-box;
+}
+header {
+    grid-area: header;
+    background-color: #353941;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    height: 60px;
+}
+#time-date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+#main {
+    grid-area: main;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px;
+    width: 580px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #5F85DB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4a6cb7;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+li {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+.delete-button {
+    background-color: #5F85DB;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.delete-button:hover {
+    background-color: #4a6cb7;
+}
+#weather {
+    grid-area: weather;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#weatherContent {
+    font-size: 16px;
+}

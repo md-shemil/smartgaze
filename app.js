@@ -53,3 +53,20 @@ async function deleteReminder(id) {
 
 // Fetch reminders when the page loads
 fetchReminders();
+ // Function to update the time and date
+ function updateTimeDate() {
+    const now = new Date();
+    const optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const optionsTime = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+    document.getElementById('time-date').innerHTML = `
+        <div>${now.toLocaleDateString('en-US', optionsDate)}</div>
+        <div>${now.toLocaleTimeString('en-US', optionsTime)}</div>
+    `;
+}
+
+// Update time and date every second
+setInterval(updateTimeDate, 1000);
+updateTimeDate(); // Initial call to set the time and date immediately
+
+
