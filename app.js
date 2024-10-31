@@ -53,10 +53,3 @@ async function deleteReminder(id) {
 
 // Fetch reminders when the page loads
 fetchReminders();
-
-
-// Update time and date every second
-setInterval(updateTimeDate, 1000);
-
-
-
