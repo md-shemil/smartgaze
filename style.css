@@ -27,15 +27,7 @@ header {
     border-radius: 8px;
 }
 
-#time-date {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-}
+
 
 #main {
     width: 100%;
