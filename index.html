@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartGaze - Reminder App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SmartGaze</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <div id="app">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-nav">
+                        <a href="#" class="logo" data-page="home">SmartGaze</a>
+                        <nav>
+                            <a href="#" data-page="home">Home</a>
+                            <a href="#" data-page="reminders">Reminders</a>
+                            <a href="#" data-page="account">Account</a>
+                            <a href="#" data-page="link1">Link1</a>
+                            <a href="#" data-page="link2">Link2</a>
+                        </nav>
+                    </div>
+                    <div class="user-actions">
+                        <button id="mobileMenuButton" class="mobile-menu-button">
+                            <i data-lucide="menu"></i>
+                            <span class="sr-only">Toggle Menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <header>
-        <h1>SmartGaze</h1>
-
-    </header>
-
-    <div id="main">
-        <h2>Set a Reminder</h2>
-        <form id="reminderForm">
-            <input type="text" id="reminderInput" placeholder="Enter a reminder" required>
-            <button type="submit">Add Reminder</button>
-        </form>
-
-        <h2>Reminders</h2>
-        <ul id="remindersList"></ul>
+        <main id="mainContent"></main>
     </div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,268 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #4b5563;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.user-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.user-actions button:hover {
+    color: #2563eb;
+}
+
+.user-actions button i {
+    margin-right: 5px;
+}
+
+.mobile-menu-button {
+    display: none;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.content-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #dc2626;
+    margin-top: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tab styles */
+.tab-container {
+    margin-bottom: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.tab-content {
+    display: none;
+    padding-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Close button styles */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4b5563;
+}
+
+/* Reminders page styles */
+#reminderForm {
+    margin-bottom: 20px;
+}
+
+#reminderForm input {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+#reminderForm button {
+    width: 110px;
+    padding: 8px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#remindersList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#remindersList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f3f4f6;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #dc2626;
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo-nav {
+        flex-grow: 1;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu-open nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
