@@ -187,49 +187,71 @@ form button:hover {
 }
 
 /* Reminders page styles */
+/* Reminders form and list styles */
 #reminderForm {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 #reminderForm input {
-    width: calc(100% - 120px);
+    flex: 0 0 70%; /* Takes 70% of the width */
     padding: 8px;
     border: 1px solid #d1d5db;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #reminderForm button {
-    width: 110px;
-    padding: 8px;
+    flex: 0 0 30%; /* Takes 30% of the width */
+    padding: 10px;
     background-color: #2563eb;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px; /* Adds a small gap between input and button */
 }
 
+#reminderForm button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Reminder list styles */
 #remindersList {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 #remindersList li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f3f4f6;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
     margin-bottom: 10px;
     border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+/* Delete button styles */
 .delete-button {
     background: none;
     border: none;
     cursor: pointer;
     color: #dc2626;
+    font-size: 16px;
+    padding: 5px;
 }
+
+.delete-button:hover {
+    color: #b91c1c;
+}
+
 
 /* Utility classes */
 .hidden {

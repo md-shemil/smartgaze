@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h2>Set a Reminder</h2>
                     <form id="reminderForm">
                         <input type="text" id="reminderInput" placeholder="Enter a reminder" required>
-                        <button type="submit">Add Reminder</button>
+                        <button type="submit">Add</button>
                     </form>
 
                     <h2>Your Reminders</h2>
